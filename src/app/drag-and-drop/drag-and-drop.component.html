@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Drag and Drop Connectors</h2>
+    <div
+      cdkDropList
+      (cdkDropListDropped)="drop($event)"
+      class="connectors"
+    >
+      <div
+        *ngFor="let connector of connectors; let i = index"
+        cdkDrag
+        class="connector"
+      >
+        {{ connector }}
+      </div>
+    </div>
+  </div>
+  
